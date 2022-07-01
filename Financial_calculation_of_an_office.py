@@ -102,7 +102,8 @@ class ContractualOfficial(Employee):
 
     def calculate_salary(self):
         self.__calculate_premium()
-        totall = (self.__dailySalary*self.__numberDays) -self.__premium-self.__violation
+        totall = (self.__dailySalary*self.__numberDays) - \
+            self.__premium-self.__violation
         return totall
 
     def show_info(self) -> str:
@@ -113,8 +114,19 @@ class ContractualOfficial(Employee):
 oe1 = OfficialEmployee("meiad", "noushadi", "shiraz", "09170001122", 29, 8)
 oe1.overtimeHours = 58
 print(oe1.show_info())
+print(30*"-")
+oe2 = OfficialEmployee("aylar", "noushadi", "shiraz", "09170001122", 21, 0)
+oe2.overtimeHours = 58
+print(oe2.show_info())
+print(30*"-")
 # --------------------------------------------------------------------------------
 ce1 = ContractualOfficial("ali", "karimi", "esfahan", "09131112233", 23)
 ce1.numberDays = 25
 ce1.violation = 900000
 print(ce1.show_info())
+print(30*"-")
+ce2 = ContractualOfficial("reza", "ahmadi", "tehran", "09121231212", 24)
+ce2.numberDays = 20
+ce2.violation = 200000
+print(ce2.show_info())
+# --------------------------------------------------------------------------------
