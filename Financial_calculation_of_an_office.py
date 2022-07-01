@@ -126,7 +126,7 @@ ce1.violation = 900000
 print(ce1.show_info())
 print(30*"-")
 ce2 = ContractualOfficial("reza", "ahmadi", "tehran", "09121231212", 24)
-ce2.numberDays = 20
+ce2.numberDays = 22
 ce2.violation = 200000
 print(ce2.show_info())
 # --------------------------------------------------------------------------------
